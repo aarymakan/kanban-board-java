@@ -149,7 +149,7 @@ public class Task {
     public String createTaskID(int intTaskIteration) {
         this.strTaskId[intTaskIteration] = this.strTaskName[intTaskIteration].substring(0, 1).toUpperCase()  +
                 this.strTaskName[intTaskIteration].substring(1, 2).toUpperCase() + ":" +
-                intTaskIteration + ":" +
+                (intTaskIteration + 1) + ":" +
                 this.strDevelopFirstName[intTaskIteration].substring(strDevelopFirstName[intTaskIteration].length() - 3).toUpperCase();
 
         return strTaskId[intTaskIteration];
